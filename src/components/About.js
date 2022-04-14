@@ -17,8 +17,8 @@ export default function About() {
             Passionate about the development of web applications and the possibilities of the web3 and the metaverse, with a strong desire to learn and improve. 
             </p>
             <nav className='social-links'>
-                <a href="https://github.com/marcomedeirosfh" target="_blank"><img src={github} alt="github" /></a>
-                <a href="https://www.linkedin.com/in/marco-medeiros-filho/" target="_blank"><img src={linkedin} alt="linkedin" /></a>
+                <a href="https://github.com/marcomedeirosfh" target="_blank" rel="noreferrer"><img src={github} alt="github" /></a>
+                <a href="https://www.linkedin.com/in/marco-medeiros-filho/" target="_blank" rel="noreferrer"><img src={linkedin} alt="linkedin" /></a>
                 <a href="mailto: marcomedeiros@gmail.com"><img src={mail} alt="mail" /></a>
             </nav>
         </section>
