@@ -19,7 +19,7 @@ export default function About() {
             <nav className='social-links'>
                 <a href="https://github.com/marcomedeirosfh" target="_blank" rel="noreferrer"><img src={github} alt="github" /></a>
                 <a href="https://www.linkedin.com/in/marco-medeiros-filho/" target="_blank" rel="noreferrer"><img src={linkedin} alt="linkedin" /></a>
-                <a href="mailto: marcomedeiros@gmail.com"><img src={mail} alt="mail" /></a>
+                <a href="mailto: marcomedeirosfilho@gmail.com"><img src={mail} alt="mail" /></a>
             </nav>
         </section>
     )
