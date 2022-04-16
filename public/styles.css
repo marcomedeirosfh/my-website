@@ -121,7 +121,7 @@ h3 {
     border-radius: 10px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
     body {
         padding: 0.8rem;
     }
