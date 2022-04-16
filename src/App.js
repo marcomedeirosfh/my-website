@@ -1,12 +1,15 @@
 import React from 'react'
-import About from './components/About'
+import Hero from './components/Hero'
+import Projects from './components/Projects'
 // import Header from './components/Header'
 
 export default function App() {
     return (
         <>
             {/* <Header /> */}
-            <About />
+            <Hero />
+
+            <Projects />
         </>
     )
 }

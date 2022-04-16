@@ -1,13 +1,21 @@
+:root {
+    --text-color: #ececec;
+    --primary-color: linear-gradient(to bottom right, #239797, #9631a3);
+    --background-color: #020105;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
-    color: #ececec;
+    color: var(--text-color);
+
+    scroll-behavior: smooth;
 }
 
 body {
-    background-color: #020105;
+    background: var(--primary-color);
 }
 
 header {
@@ -19,27 +27,31 @@ header {
 
 header > nav {
     width: 70%;
-    background-color: #0d0b1c;
+    background: var(--background-color);
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-evenly;
     border-radius: 0 0 10px 10px;
 }
 
 header > nav > a {
-    color: #ececec;
+    height: 100%;
+    color: var(--text-color);
     text-decoration: none;
     font-size: 1.2rem;
-    padding: 1rem;
+    padding: 1rem;    
+    text-align: center;
+    line-height: 3.5rem;
+    font-weight: 700;
 }
 
 section {
     width: 70%;
+    min-width: 280px;
     height: 90vh;
     margin: 2rem auto;
     padding: 2rem 5rem;
     border-radius: 10px;
-    background-color: #0d0b1c;
+    background: var(--background-color);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -50,11 +62,11 @@ section {
 .avatar {
     width: 350px;
     border-radius: 50%;
-    border: 5px solid #020105;
-    background-color: #020105;
+    border: 5px solid var(--primary-color);
+    background: var(--primary-color);
 }
 
-.about > h3 {
+h3 {
     font-weight: 500;
 }
 
@@ -62,6 +74,50 @@ section {
     width: 40%;
     display: flex;
     justify-content: space-around;
+}
+
+.projects-container {
+    width: 100%;
+    gap: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-evenly;
+
+    overflow: auto;
+
+}
+
+
+.projects-container::-webkit-scrollbar {
+    display: none;
+}
+
+.project {
+    max-width: 40%;
+    min-width: 200px;
+    height: 60vh;
+    padding: 3rem 2rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--primary-color);
+}
+
+.project > img {
+    width: 100%;
+    border-radius: 10px;
+    
+}
+
+.github-icon {
+    width: 3rem;
+    height: 3rem;
+    padding: 0.4rem;
+    background-color: var(--background-color);
+    border-radius: 10px;
 }
 
 @media screen and (max-width: 600px) {
@@ -86,11 +142,11 @@ section {
     .avatar {
         width: 250px;
         border-radius: 50%;
-        border: 5px solid #020105;
-        background-color: #020105;
+        border: 5px solid var(--primary-color);
+        background: var(--primary-color);
     }
 
-    .about > h3 {
+    h3 {
         font-size: 1rem;
     }
 
@@ -100,3 +156,6 @@ section {
         justify-content: space-around;
     }
 }
+
+
+

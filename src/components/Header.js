@@ -5,7 +5,7 @@ export default function Header() {
         <header>
             <nav>
                     <a href="#about">About</a>
-                    <a href="">Portfolio</a>
+                    <a href="#projects">Portfolio</a>
                     <a href="">Contact</a>
             </nav>
         </header>
